@@ -21,7 +21,6 @@ func main() {
 
 	// 构建数据库连接信息
 	dataSourceName := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=%s", userName, password, idAddress, port, dbName, charset)
-	//dataSourceName := fmt.Printf("%s:%s@tcp(%s:%d)/%s?charset=%s",userName,password,idAddress,port,dbName,charset)
 
 	// xorm.NewEngine
 	engine, err := xorm.NewEngine("mysql", dataSourceName)
